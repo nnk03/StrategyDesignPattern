@@ -14,23 +14,40 @@ using SortingStrategy;
 
 namespace SorterModule
 {
+    /// <summary>
+    /// The Sorter class is responsible for sorting an array using a specified sorting strategy.
+    /// </summary>
     public class Sorter
     {
-        public ISortingStrategy? _sortingStrategy;
+        /// <summary>
+        /// Holds the reference to the sorting strategy to be used.
+        /// </summary>
+        private ISortingStrategy? _sortingStrategy;
 
-        public void SetSortingStrategy(ISortingStrategy sortingStrategy)
+        /// <summary>
+        /// Sets the sorting strategy to be used by the Sorter.
+        /// </summary>
+        /// <param name="sortingStrategy">The sorting strategy to be applied.</param>
+        public void SetSortingStrategy( ISortingStrategy sortingStrategy )
         {
             _sortingStrategy = sortingStrategy;
         }
 
-        public string Sort(int[] array )
+        /// <summary>
+        /// Sorts the given array using the specified sorting strategy.
+        /// </summary>
+        /// <param name="array">The array of integers to be sorted.</param>
+        /// <returns>
+        /// A string representing the result of the sorting operation or an error message if the strategy is not specified.
+        /// </returns>
+        public string Sort( int[] array )
         {
-            if(_sortingStrategy == null)
+            if (_sortingStrategy == null)
             {
                 return "Unspecified Strategy";
             }
 
-            return _sortingStrategy.Sort(array);
+            return _sortingStrategy.Sort( array );
         }
     }
 }

@@ -11,22 +11,26 @@
 *****************************************************************************/
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SortingStrategy
 {
+    /// <summary>
+    /// Implementation of the bubble sort algorithm for sorting an array.
+    /// </summary>
     public class BubbleSortStrategy : ISortingStrategy
     {
-        public string Sort(int[] array)
+        /// <summary>
+        /// Sorts the given array using the bubble sort algorithm.
+        /// </summary>
+        /// <param name="array">The array of integers to be sorted.</param>
+        /// <returns>A string indicating that the array has been bubble sorted.</returns>
+        public string Sort( int[] array )
         {
             int length = array.Length;
 
-            for(int i = 0; i < length - 1; ++i)
+            for (int i = 0; i < length - 1; ++i)
             {
-                for(int j = 0; j < length - i - 1; ++j)
+                for (int j = 0; j < length - i - 1; ++j)
                 {
                     if (array[j] > array[j + 1])
                     {
@@ -35,9 +39,7 @@ namespace SortingStrategy
                 }
             }
 
-
             return "BUBBLE_SORTED";
         }
-
     }
 }
