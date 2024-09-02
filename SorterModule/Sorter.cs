@@ -1,4 +1,16 @@
-﻿using SortingStrategy;
+﻿/******************************************************************************
+* Filename    = Sorter.cs
+*
+* Author      = Neeraj Krishna N
+*
+* Product     = StrategyDesignPattern
+* 
+* Project     = SorterModule
+*
+* Description = Sorter Class which has an instance of strategy to be used
+*****************************************************************************/
+
+using SortingStrategy;
 
 namespace SorterModule
 {

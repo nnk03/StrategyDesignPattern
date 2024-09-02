@@ -1,4 +1,16 @@
-﻿using System;
+﻿/******************************************************************************
+* Filename    = BubbleSortStrategy.cs
+*
+* Author      = Neeraj Krishna N
+*
+* Product     = StrategyDesignPattern
+* 
+* Project     = SortingStrategy
+*
+* Description = Implements Bubble Sort Strategy
+*****************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

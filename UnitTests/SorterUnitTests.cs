@@ -1,4 +1,16 @@
-﻿using SorterModule;
+﻿/******************************************************************************
+* Filename    = SorterUnitTests.cs
+*
+* Author      = Neeraj Krishna N
+*
+* Product     = StrategyDesignPattern
+* 
+* Project     = UnitTests
+*
+* Description = Unit Tests for strategy design pattern
+*****************************************************************************/
+
+using SorterModule;
 using SortingStrategy;
 
 namespace UnitTests
