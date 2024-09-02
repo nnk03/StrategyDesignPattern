@@ -10,7 +10,7 @@ The **Real World Application** for the Strategy design principle includes
 ##  Design
 This project implements a Sorter Class. The Sorter class has a method which sorts an array of numbers. But the Sorter method does not tell which algorithm (or strategy) to be used when sorting. According to the use case, the sorting algorithm (or strategy) can be dynamically changed by changing the class member of Sorter Class, thus demonstrating Strategy Design Principle. This avoid code duplication. An example use case is, when array size is small, bubble sort or insertion sort performs better than merge sort due to their lower overhead. Hence, the strategy to sort can be dynamically changed during runtime based on the array size.
 
-![Module And Class Diagram](./ModuleAndClassDiagram.jpeg)
+![Module And Class Diagram](./ModuleAndClassDiagram.jpg)
 
 ## Environment
 The project builds and runs with Visual Studio Community 2022 when the required workloads are installed.
