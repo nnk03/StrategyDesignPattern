@@ -38,7 +38,7 @@ namespace SorterModule
         /// </summary>
         /// <param name="array">The array of integers to be sorted.</param>
         /// <returns>
-        /// A string representing the result of the sorting operation or an error message if the strategy is not specified.
+        /// A string representing the sorting strategy used or if no sorting strategy was specified then it returns "unspecified strategy"
         /// </returns>
         public string Sort( int[] array )
         {

@@ -13,7 +13,7 @@
 namespace SortingStrategy
 {
     /// <summary>
-    /// Defines a sorting strategy for sorting an array of integers.
+    /// Defines an interface for sorting strategy for sorting an array of integers.
     /// </summary>
     public interface ISortingStrategy
     {
@@ -21,7 +21,7 @@ namespace SortingStrategy
         /// Sorts the given array using a specific sorting strategy.
         /// </summary>
         /// <param name="array">The array of integers to be sorted.</param>
-        /// <returns>A string indicating the result of the sorting operation.</returns>
+        /// <returns>A string indicating the type of sorting strategy used.</returns>
         public string Sort( int[] array );
     }
 }
