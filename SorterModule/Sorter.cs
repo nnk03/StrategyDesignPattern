@@ -11,15 +11,14 @@ namespace SorterModule
             _sortingStrategy = sortingStrategy;
         }
 
-        public void Sort(int[] array )
+        public string Sort(int[] array )
         {
             if(_sortingStrategy == null)
             {
-                Console.WriteLine( "Strategy Not Specified" );
-                return;
+                return "Unspecified Strategy";
             }
 
-            _sortingStrategy.Sort(array);
+            return _sortingStrategy.Sort(array);
         }
     }
 }
