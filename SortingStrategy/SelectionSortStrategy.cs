@@ -14,7 +14,7 @@ namespace SortingStrategy
             int currentIndex = left;
             while(currentIndex <= right)
             {
-                if(array[minValueIndex] < array[currentIndex])
+                if(array[currentIndex] < array[minValueIndex])
                 {
                     minValueIndex = currentIndex;
                 }

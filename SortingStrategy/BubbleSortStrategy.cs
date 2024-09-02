@@ -14,7 +14,7 @@ namespace SortingStrategy
 
             for(int i = 0; i < length - 1; ++i)
             {
-                for(int j = i; j < length - i - 1; ++j)
+                for(int j = 0; j < length - i - 1; ++j)
                 {
                     if (array[j] > array[j + 1])
                     {
@@ -24,7 +24,7 @@ namespace SortingStrategy
             }
 
 
-            return "BUBBLE SORTED";
+            return "BUBBLE_SORTED";
         }
 
     }
